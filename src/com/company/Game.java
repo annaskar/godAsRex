@@ -5,12 +5,12 @@ import java.util.Scanner;
 
 public class Game {
 
-    protected String anse1;
-    protected String q; //ЕΡΩΤΗΣΗ
-    protected String anse2;
-    protected String anse3;
-    protected String anse4;
-    protected String trueanse;
+    private String anse1;
+    private String q; //ЕΡΩΤΗΣΗ
+    private String anse2;
+    private String anse3;
+    private String anse4;
+    private String trueanse;
 
 
 protected Game(String anse1, String anse2, String anse3, String anse4, String q, String trueanse)
@@ -46,26 +46,31 @@ public void playwithmenotwhitANNA()
 {
      Game pack=new Game("ANNA IS", "WOMEN BILL", "WOMAN", "STERIOS", "BILL", "WOMEN BILL");
     TrueAn a = null;
+    this.menu2();
     int va=0;
-        this.menu2();
     Scanner sc= new Scanner(System.in); //System.in is a standard input stream.
-    String str1= sc.nextLine(); //reads string.
-        if (str1 == "football") {
+   while(va==0) {
+       String str1 = sc.nextLine(); //reads string.
+
+       if (str1 == "football") {
 
 
-            //pack()=qestion(type:"football"); //ΠΕΡΝΩ ΤΗΝ ΕΡΩΤΗΣΗ ΚΑΙ ΤΗΝ ΑΠΑΝΤΗΣΗ ΚΑΙ ΤΑ ΑΠΟΘΗΚΕΥΩ  ΕΔΩ
-           va=a.gameTrue(pack);
-            return ;
+           //pack()=qestion(type:"football"); //ΠΕΡΝΩ ΤΗΝ ΕΡΩΤΗΣΗ ΚΑΙ ΤΗΝ ΑΠΑΝΤΗΣΗ ΚΑΙ ΤΑ ΑΠΟΘΗΚΕΥΩ  ΕΔΩ
+           va = a.gameTrue(pack);
+           //  return ;
 
 
-        }
-        if (str1 == "animals") {
-            return ;
-            //   question(type:animals);
-        }
-        else System.out.print("Please enter True value");
-return ;
+       }
+       if (str1 == "animals") {
+           //   question(type:animals);
+           va=2;
+           va = a.gameTrue(pack);
+           //return ;
 
+       }
+       else System.out.print("Please enter True value");
+   }
+return;
 }
 
     /*private String nextLine() {
