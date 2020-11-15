@@ -15,21 +15,23 @@ public class BetGame {
 
     }
     private int menu2() {
-       Scanner sc = new Scanner(System.in); //System.in is a standard input stream.
-        while (sc(String) == " ")
-        {if (sc(String) == "a") {
+       Scanner sc = new Scanner(System.in);
+        String a = sc.nextLine();//System.in is a standard input stream.
+        while (a != " ")
+        {if (a == "a") {
                 return 250;
-            } else if (sc == "b") {
+            } else if (a == "b") {
                 return 500;
-            } else if (sc =="c") {
+            } else if (a =="c") {
                 return 750;
-            } else if (sc =="d") {
+            } else if (a =="d") {
                 return 1000;
             } else
                 System.out.println("Chose corect please :( ");
-        Scanner sc = new Scanner(System.in); //System.in is a standard input stream.
-
-    }}
+         a = sc.nextLine();//System.in is a standard input stream.
+        }
+        return 0;
+    }
 
 
     
