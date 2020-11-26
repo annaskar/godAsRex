@@ -1,14 +1,13 @@
 package com.company;
 
-import java.awt.*;
-import java.util.Scanner;
+import java.io.FileNotFoundException;
 
 public class Main {
 
-    public static void main(String[] args) {
-Game a = new Game("ANNA IS", "WOMEN BILL", "WOMAN", "STERIOS", "BILL", "WOMEN BILL");
+    public static void main(String[] args) throws FileNotFoundException {
+        Game a = new Game();
 
-a.playwithmenotwhitANNA();
-        // write your code here
+        a.playwithmenotwhitANNA();
+
     }
 }

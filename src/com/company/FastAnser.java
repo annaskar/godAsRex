@@ -1,4 +1,4 @@
-package com.company;
+/*package com.company;
 
 import java.util.Scanner;
 
@@ -33,12 +33,13 @@ public class FastAnser {
         int point;
         menu();
         Player a, b;
-        System.out.println(question.getQuestion());
 
-        question.printAnswers();
+        System.out.println(Q.getQuestion());
+
+        Q.printAnswers();
 
         /*Scanner sc = new Scanner(System.in); //System.in is a standard input stream.
-        String answerOfPlayer = sc.nextLine(); //reads string.*/
+        String answerOfPlayer = sc.nextLine(); //reads string.
         int ans=0;
         ans = menu2();
         if (question.trueAnswer(answerOfPlayer) && (ans == 1)) {
@@ -55,3 +56,4 @@ public class FastAnser {
     }
 
 }
+*/

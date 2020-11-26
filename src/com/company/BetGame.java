@@ -1,7 +1,14 @@
-package com.company;
-import java.util.Scanner;
+
+/*import java.util.Scanner;
 
 public class BetGame {
+    private QuestionAndAnswer question;
+    private Player player1;
+
+    public BetGame(QuestionAndAnswer question , Player player1){
+        this.question = question;
+        this.player1 = player1;
+    }
 
 
     private Object String;
@@ -15,27 +22,24 @@ public class BetGame {
 
     }
     private int menu2() {
-       Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         String a = sc.nextLine();//System.in is a standard input stream.
         while (a != " ")
         {if (a == "a") {
-                return 250;
-            } else if (a == "b") {
-                return 500;
-            } else if (a =="c") {
-                return 750;
-            } else if (a =="d") {
-                return 1000;
-            } else
-                System.out.println("Chose corect please :( ");
-         a = sc.nextLine();//System.in is a standard input stream.
+            return 250;
+        } else if (a == "b") {
+            return 500;
+        } else if (a =="c") {
+            return 750;
+        } else if (a =="d") {
+            return 1000;
+        } else
+            System.out.println("Chose corect please :( ");
+            a = sc.nextLine();//System.in is a standard input stream.
         }
         return 0;
     }
 
-
-    
-    
     public void game() {
         int point;
         menu();
@@ -55,8 +59,4 @@ public class BetGame {
             player1.updatePointsOfPlayer(point);
         }
     }
-
-
-
-
-}
+}*/
